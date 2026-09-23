@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/hc-586three/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hc-586three</title>
+    <script type="module" crossorigin src="/hc-586three/assets/index-CdiU0enn.js"></script>
+  </head>
+  <style>body{margin:0}#toggleBladeDetail{z-index:100;color:#fff;cursor:pointer;background:#0009;border:1px solid #ffffff4d;border-radius:4px;padding:8px 16px;font-size:14px;position:fixed;top:20px;left:20px}#toggleBladeDetail.active{background:#1890ff}.funcButtons{width:20px;height:400px;display:none;position:absolute;top:20%;right:4%}.funcButton{float:left;color:#f0f8ff;cursor:pointer;width:40px;line-height:100px;transition:color .2s;display:block}.funcButton:hover,.funcButton.active{color:#1890ff}#batteryViewBtn{z-index:100;color:#fff;cursor:pointer;background:#0009;border:1px solid #ffffff4d;border-radius:4px;padding:8px 16px;font-size:14px;position:fixed;top:60px;left:20px}#batteryToggleBtn{z-index:100;color:#fff;cursor:pointer;background:#0009;border:1px solid #ffffff4d;border-radius:4px;padding:8px 16px;font-size:14px;display:none;position:absolute;top:120px;right:4%}#batteryViewBtn.active,#batteryToggleBtn.active{background:#1890ff}</style>
+  <body>
+    <div id="app"></div>
+    <button id="toggleBladeDetail">刀头细节</button>
+    <button id="batteryViewBtn">电池仓视角</button>
+    <!-- <label class="toggleWrap">
+      <span class="toggleText">刀头细节</span>
+      <input type="checkbox" id="toggleBladeDetail">
+      <span class="toggleSlider"></span>
+    </label> -->
+
+    <div class="funcButtons" style="display: none; position: absolute; top: 20px; flex-direction: column; gap:8px;">
+      <div class="funcButton" id="funcButtonTunnel">#10</div>
+      <div class="funcButton" id="funcButtonCarBody">#7F</div>
+      <div class="funcButton" id="funcButtonWindage">#5F</div>
+      <div class="funcButton" id="funcButtonRader">#4F</div>
+    </div>
+
+    <button id="batteryToggleBtn">开启电池仓</button>
+    <!-- 右下角项目编号 -->
+    <div id="productCode" style="
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        font-size: 32px;
+        color: #ffffff;
+        pointer-events: none;
+        z-index: 100;
+    ">
+    HC-586
+    </div>
+
+    
+  </body>
+</html>
